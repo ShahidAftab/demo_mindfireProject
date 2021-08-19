@@ -24,6 +24,7 @@ public class testScript_task1 {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get("https://www.flipkart.com/");
+		System.out.println("Flipkart opened.");
 		WebDriverWait wait = new WebDriverWait(driver,30);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class='_2KpZ6l _2doB4z']"))).click();
 		Actions action = new Actions(driver);
